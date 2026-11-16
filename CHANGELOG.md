@@ -1,5 +1,8 @@
 # Changelog
 
+## 1.0.2 — 2026-11-16
+- Fix: la pagina di configurazione del modulo andava in errore ("Undefined array key is_default") con più lingue attive e la modalità debug accesa: le lingue passate al form hanno ora il flag `is_default`.
+
 ## 1.0.1 — 2026-10-29
 - Fix: il salvataggio della configurazione falliva sempre su PrestaShop 9 ("Token di sicurezza non valido"): il token è ora validato con il meccanismo del core (UserTokenManager su PS 9, hash legacy su PS 8).
 - Fix: la modifica di un negozio andava in errore su PrestaShop 9 (`meta_title` deve essere un array).
